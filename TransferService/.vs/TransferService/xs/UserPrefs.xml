@@ -1,0 +1,37 @@
+﻿<Properties StartupConfiguration="{384DB7AC-4918-4ABD-9C12-5F673FFB200D}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="TransferService.Api/appsettings.json">
+    <Files>
+      <File FileName="TransferService.Infra.CrossCutting.Identity/ApplicationSignInManager.cs" Line="2" Column="23" />
+      <File FileName="TransferService.Api/appsettings.json" Line="3" Column="27" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="TransferService" expanded="True">
+            <Node name="1 - Api" expanded="True">
+              <Node name="TransferService.Api" expanded="True">
+                <Node name="appsettings.json" selected="True" />
+              </Node>
+            </Node>
+            <Node name="2 - Service" expanded="True">
+              <Node name="TransferService.Service" expanded="True">
+                <Node name="Dependencies" expanded="True" />
+              </Node>
+            </Node>
+            <Node name="4 - Infrastructure" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.1_220-_220Api.TransferService.Api PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/raffacabofrio/REPOSITORIOS/transfer-service/TransferService/ShareBook.Api/Middleware/ExceptionHandlerMiddleware.cs" relfile="ShareBook.Api/Middleware/ExceptionHandlerMiddleware.cs" line="49" column="1" />
+      <Breakpoint file="/Users/raffacabofrio/REPOSITORIOS/transfer-service/TransferService/ShareBook.Service/Book/BookService.cs" relfile="ShareBook.Service/Book/BookService.cs" line="53" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
