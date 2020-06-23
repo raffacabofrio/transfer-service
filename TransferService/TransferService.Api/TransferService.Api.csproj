@@ -4,12 +4,6 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
-  <PropertyGroup Condition=" '$(RunConfiguration)' == 'ShareBook.Api' ">
-    <StartAction>Project</StartAction>
-    <ExternalConsole>true</ExternalConsole>
-    <LaunchUrl>swagger</LaunchUrl>
-    <ApplicationURL>http://localhost:50709/</ApplicationURL>
-  </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="AspNetCore.HealthChecks.SqlServer" Version="3.1.1" />
     <PackageReference Include="AutoMapper" Version="9.0.0" />

@@ -3,7 +3,7 @@
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iisExpress": {
-      "applicationUrl": "http://localhost:50708/",
+      "applicationUrl": "http://localhost:50708",
       "sslPort": 0
     }
   },
@@ -19,19 +19,11 @@
     "TransferService.Api": {
       "commandName": "Project",
       "launchBrowser": true,
-      "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
-      },
-      "applicationUrl": "http://localhost:33216"
-    },
-    "ShareBook.Api": {
-      "commandName": "Project",
-      "launchBrowser": true,
       "launchUrl": "swagger",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       },
-      "applicationUrl": "http://localhost:50709/"
+      "applicationUrl": "http://localhost:33216"
     }
   }
 }
