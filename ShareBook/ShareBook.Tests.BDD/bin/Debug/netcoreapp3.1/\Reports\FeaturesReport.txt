@@ -1,0 +1,17 @@
+Summary:
+	Test execution start time       : 2020-06-09 21:12:17 UTC
+	Test execution end time         : 2020-06-09 21:12:17 UTC
+	Test execution time             : 0ms
+	Test execution time (aggregated): 0ms
+	Number of features              : 0
+	Number of scenarios             : 0
+	Passed scenarios                : 0
+	Bypassed scenarios              : 0
+	Failed scenarios                : 0
+	Ignored scenarios               : 0
+	Number of steps                 : 0
+	Passed steps                    : 0
+	Bypassed steps                  : 0
+	Failed steps                    : 0
+	Ignored steps                   : 0
+	Not Run steps                   : 0

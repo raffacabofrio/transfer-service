@@ -1,0 +1,36 @@
+Summary:
+	Test execution start time       : 2020-04-15 22:47:11 UTC
+	Test execution end time         : 2020-04-15 22:47:13 UTC
+	Test execution time             : 1s 974ms
+	Test execution time (aggregated): 1s 974ms
+	Number of features              : 1
+	Number of scenarios             : 1
+	Passed scenarios                : 0
+	Bypassed scenarios              : 0
+	Failed scenarios                : 1
+	Ignored scenarios               : 0
+	Number of steps                 : 3
+	Passed steps                    : 1
+	Bypassed steps                  : 0
+	Failed steps                    : 1
+	Ignored steps                   : 0
+	Not Run steps                   : 1
+
+Feature: RegisterUserFeature [REGISTER-USER]
+	New user wants to join in sharebook plataform
+
+	Scenario: Register User Successfully [Registration with all data correct.] - Failed (1s 974ms)
+		Categories: BDD
+		Step 1: GIVEN new user want to join with this datas - Passed (23ms)
+		Step 2: WHEN the new user registers - Failed (1s 904ms)
+		Step 3: THEN will receive a success message - NotRun
+		Details:
+			Step 2: System.Exception : Rollbar.NET notifier is not configured properly. A valid access token needs to be specified.
+				at Rollbar.NetCore.RollbarConfigurationUtil.DeduceRollbarConfig(IConfiguration configuration)
+				at Rollbar.NetCore.AspNet.RollbarLoggerProvider..ctor(IConfiguration configuration, IOptions`1 options, IHttpContextAccessor httpContextAccessor)
+				at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, ServiceProviderEngineScope scope)
+				at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScoped(ScopedCallSite scopedCallSite, ServiceProviderEngineScope scope)
+				at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+				at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+				at Microsoft.AspNetCore.Builder.ApplicationBuilderExtensions.UseRollbarMiddleware(IApplicationBuilder builder)
+				at ShareBook.Api.Startup.Configure(IApplicationBuilder app, IHostingEnvironment env) in /Users/raffacabofrio/REPOSITORIOS/SHAREBOOK/sharebook-backend/ShareBook/ShareBook.Api/Startup.cs:line 104

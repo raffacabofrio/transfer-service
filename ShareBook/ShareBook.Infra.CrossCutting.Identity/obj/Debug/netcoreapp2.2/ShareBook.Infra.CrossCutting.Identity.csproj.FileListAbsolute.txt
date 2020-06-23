@@ -1,0 +1,14 @@
+/Users/raffacabofrio/REPOSITORIOS/SHAREBOOK/sharebook-backend/ShareBook/ShareBook.Infra.CrossCutting.Identity/bin/Debug/netcoreapp2.2/ShareBook.Infra.CrossCutting.Identity.deps.json
+/Users/raffacabofrio/REPOSITORIOS/SHAREBOOK/sharebook-backend/ShareBook/ShareBook.Infra.CrossCutting.Identity/bin/Debug/netcoreapp2.2/ShareBook.Infra.CrossCutting.Identity.dll
+/Users/raffacabofrio/REPOSITORIOS/SHAREBOOK/sharebook-backend/ShareBook/ShareBook.Infra.CrossCutting.Identity/bin/Debug/netcoreapp2.2/ShareBook.Infra.CrossCutting.Identity.pdb
+/Users/raffacabofrio/REPOSITORIOS/SHAREBOOK/sharebook-backend/ShareBook/ShareBook.Infra.CrossCutting.Identity/bin/Debug/netcoreapp2.2/ShareBook.Domain.dll
+/Users/raffacabofrio/REPOSITORIOS/SHAREBOOK/sharebook-backend/ShareBook/ShareBook.Infra.CrossCutting.Identity/bin/Debug/netcoreapp2.2/ShareBook.Helper.dll
+/Users/raffacabofrio/REPOSITORIOS/SHAREBOOK/sharebook-backend/ShareBook/ShareBook.Infra.CrossCutting.Identity/bin/Debug/netcoreapp2.2/ShareBook.Domain.pdb
+/Users/raffacabofrio/REPOSITORIOS/SHAREBOOK/sharebook-backend/ShareBook/ShareBook.Infra.CrossCutting.Identity/bin/Debug/netcoreapp2.2/ShareBook.Helper.pdb
+/Users/raffacabofrio/REPOSITORIOS/SHAREBOOK/sharebook-backend/ShareBook/ShareBook.Infra.CrossCutting.Identity/obj/Debug/netcoreapp2.2/ShareBook.Infra.CrossCutting.Identity.csprojAssemblyReference.cache
+/Users/raffacabofrio/REPOSITORIOS/SHAREBOOK/sharebook-backend/ShareBook/ShareBook.Infra.CrossCutting.Identity/obj/Debug/netcoreapp2.2/ShareBook.Infra.CrossCutting.Identity.AssemblyInfoInputs.cache
+/Users/raffacabofrio/REPOSITORIOS/SHAREBOOK/sharebook-backend/ShareBook/ShareBook.Infra.CrossCutting.Identity/obj/Debug/netcoreapp2.2/ShareBook.Infra.CrossCutting.Identity.AssemblyInfo.cs
+/Users/raffacabofrio/REPOSITORIOS/SHAREBOOK/sharebook-backend/ShareBook/ShareBook.Infra.CrossCutting.Identity/obj/Debug/netcoreapp2.2/ShareBook.Infra.CrossCutting.Identity.csproj.CopyComplete
+/Users/raffacabofrio/REPOSITORIOS/SHAREBOOK/sharebook-backend/ShareBook/ShareBook.Infra.CrossCutting.Identity/obj/Debug/netcoreapp2.2/ShareBook.Infra.CrossCutting.Identity.dll
+/Users/raffacabofrio/REPOSITORIOS/SHAREBOOK/sharebook-backend/ShareBook/ShareBook.Infra.CrossCutting.Identity/obj/Debug/netcoreapp2.2/ShareBook.Infra.CrossCutting.Identity.pdb
+/Users/raffacabofrio/REPOSITORIOS/SHAREBOOK/sharebook-backend/ShareBook/ShareBook.Infra.CrossCutting.Identity/obj/Debug/netcoreapp2.2/ShareBook.Infra.CrossCutting.Identity.csproj.CoreCompileInputs.cache

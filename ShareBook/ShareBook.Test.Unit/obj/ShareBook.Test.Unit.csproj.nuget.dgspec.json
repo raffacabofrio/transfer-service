@@ -1,0 +1,677 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/raffacabofrio/REPOSITORIOS/SHAREBOOK/sharebook-backend/ShareBook/ShareBook.Test.Unit/ShareBook.Test.Unit.csproj": {}
+  },
+  "projects": {
+    "/Users/raffacabofrio/REPOSITORIOS/SHAREBOOK/sharebook-backend/ShareBook/ShareBook.Api/ShareBook.Api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/raffacabofrio/REPOSITORIOS/SHAREBOOK/sharebook-backend/ShareBook/ShareBook.Api/ShareBook.Api.csproj",
+        "projectName": "ShareBook.Api",
+        "projectPath": "/Users/raffacabofrio/REPOSITORIOS/SHAREBOOK/sharebook-backend/ShareBook/ShareBook.Api/ShareBook.Api.csproj",
+        "packagesPath": "/Users/raffacabofrio/.nuget/packages/",
+        "outputPath": "/Users/raffacabofrio/REPOSITORIOS/SHAREBOOK/sharebook-backend/ShareBook/ShareBook.Api/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/raffacabofrio/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "/Users/raffacabofrio/REPOSITORIOS/SHAREBOOK/sharebook-backend/ShareBook/ShareBook.Infra.CrossCutting.Identity/ShareBook.Infra.CrossCutting.Identity.csproj": {
+                "projectPath": "/Users/raffacabofrio/REPOSITORIOS/SHAREBOOK/sharebook-backend/ShareBook/ShareBook.Infra.CrossCutting.Identity/ShareBook.Infra.CrossCutting.Identity.csproj"
+              },
+              "/Users/raffacabofrio/REPOSITORIOS/SHAREBOOK/sharebook-backend/ShareBook/Sharebook.Jobs/Sharebook.Jobs.csproj": {
+                "projectPath": "/Users/raffacabofrio/REPOSITORIOS/SHAREBOOK/sharebook-backend/ShareBook/Sharebook.Jobs/Sharebook.Jobs.csproj"
+              },
+              "/Users/raffacabofrio/REPOSITORIOS/SHAREBOOK/sharebook-backend/ShareBook/ShareBook.Service/ShareBook.Service.csproj": {
+                "projectPath": "/Users/raffacabofrio/REPOSITORIOS/SHAREBOOK/sharebook-backend/ShareBook/ShareBook.Service/ShareBook.Service.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "AspNetCore.HealthChecks.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            },
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[3.1.3, )"
+            },
+            "Microsoft.AspNetCore.Diagnostics": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Diagnostics.HealthChecks": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.HealthChecks": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "Microsoft.AspNetCore.Mvc": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
+              "target": "Package",
+              "version": "[3.1.3, )"
+            },
+            "Microsoft.AspNetCore.SpaServices": {
+              "target": "Package",
+              "version": "[3.1.3, )"
+            },
+            "Microsoft.AspNetCore.StaticFiles": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.CodeAnalysis.Common": {
+              "target": "Package",
+              "version": "[3.5.0, )"
+            },
+            "Microsoft.Extensions.Options.ConfigurationExtensions": {
+              "target": "Package",
+              "version": "[3.1.3, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[3.1.2, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            },
+            "Rollbar": {
+              "target": "Package",
+              "version": "[3.12.0, )"
+            },
+            "Rollbar.NetCore.AspNet": {
+              "target": "Package",
+              "version": "[3.12.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.3.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.301/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/raffacabofrio/REPOSITORIOS/SHAREBOOK/sharebook-backend/ShareBook/ShareBook.Domain/ShareBook.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/raffacabofrio/REPOSITORIOS/SHAREBOOK/sharebook-backend/ShareBook/ShareBook.Domain/ShareBook.Domain.csproj",
+        "projectName": "ShareBook.Domain",
+        "projectPath": "/Users/raffacabofrio/REPOSITORIOS/SHAREBOOK/sharebook-backend/ShareBook/ShareBook.Domain/ShareBook.Domain.csproj",
+        "packagesPath": "/Users/raffacabofrio/.nuget/packages/",
+        "outputPath": "/Users/raffacabofrio/REPOSITORIOS/SHAREBOOK/sharebook-backend/ShareBook/ShareBook.Domain/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/raffacabofrio/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "/Users/raffacabofrio/REPOSITORIOS/SHAREBOOK/sharebook-backend/ShareBook/ShareBook.Helper/ShareBook.Helper.csproj": {
+                "projectPath": "/Users/raffacabofrio/REPOSITORIOS/SHAREBOOK/sharebook-backend/ShareBook/ShareBook.Helper/ShareBook.Helper.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[8.6.2, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.301/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/raffacabofrio/REPOSITORIOS/SHAREBOOK/sharebook-backend/ShareBook/ShareBook.Helper/ShareBook.Helper.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/raffacabofrio/REPOSITORIOS/SHAREBOOK/sharebook-backend/ShareBook/ShareBook.Helper/ShareBook.Helper.csproj",
+        "projectName": "ShareBook.Helper",
+        "projectPath": "/Users/raffacabofrio/REPOSITORIOS/SHAREBOOK/sharebook-backend/ShareBook/ShareBook.Helper/ShareBook.Helper.csproj",
+        "packagesPath": "/Users/raffacabofrio/.nuget/packages/",
+        "outputPath": "/Users/raffacabofrio/REPOSITORIOS/SHAREBOOK/sharebook-backend/ShareBook/ShareBook.Helper/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/raffacabofrio/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.AspNetCore.Cryptography.KeyDerivation": {
+              "target": "Package",
+              "version": "[3.1.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.301/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/raffacabofrio/REPOSITORIOS/SHAREBOOK/sharebook-backend/ShareBook/ShareBook.Infra.CrossCutting.Identity/ShareBook.Infra.CrossCutting.Identity.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/raffacabofrio/REPOSITORIOS/SHAREBOOK/sharebook-backend/ShareBook/ShareBook.Infra.CrossCutting.Identity/ShareBook.Infra.CrossCutting.Identity.csproj",
+        "projectName": "ShareBook.Infra.CrossCutting.Identity",
+        "projectPath": "/Users/raffacabofrio/REPOSITORIOS/SHAREBOOK/sharebook-backend/ShareBook/ShareBook.Infra.CrossCutting.Identity/ShareBook.Infra.CrossCutting.Identity.csproj",
+        "packagesPath": "/Users/raffacabofrio/.nuget/packages/",
+        "outputPath": "/Users/raffacabofrio/REPOSITORIOS/SHAREBOOK/sharebook-backend/ShareBook/ShareBook.Infra.CrossCutting.Identity/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/raffacabofrio/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "/Users/raffacabofrio/REPOSITORIOS/SHAREBOOK/sharebook-backend/ShareBook/ShareBook.Domain/ShareBook.Domain.csproj": {
+                "projectPath": "/Users/raffacabofrio/REPOSITORIOS/SHAREBOOK/sharebook-backend/ShareBook/ShareBook.Domain/ShareBook.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.301/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/raffacabofrio/REPOSITORIOS/SHAREBOOK/sharebook-backend/ShareBook/Sharebook.Jobs/Sharebook.Jobs.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/raffacabofrio/REPOSITORIOS/SHAREBOOK/sharebook-backend/ShareBook/Sharebook.Jobs/Sharebook.Jobs.csproj",
+        "projectName": "Sharebook.Jobs",
+        "projectPath": "/Users/raffacabofrio/REPOSITORIOS/SHAREBOOK/sharebook-backend/ShareBook/Sharebook.Jobs/Sharebook.Jobs.csproj",
+        "packagesPath": "/Users/raffacabofrio/.nuget/packages/",
+        "outputPath": "/Users/raffacabofrio/REPOSITORIOS/SHAREBOOK/sharebook-backend/ShareBook/Sharebook.Jobs/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/raffacabofrio/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "/Users/raffacabofrio/REPOSITORIOS/SHAREBOOK/sharebook-backend/ShareBook/ShareBook.Domain/ShareBook.Domain.csproj": {
+                "projectPath": "/Users/raffacabofrio/REPOSITORIOS/SHAREBOOK/sharebook-backend/ShareBook/ShareBook.Domain/ShareBook.Domain.csproj"
+              },
+              "/Users/raffacabofrio/REPOSITORIOS/SHAREBOOK/sharebook-backend/ShareBook/ShareBook.Repository/ShareBook.Infra.Data.csproj": {
+                "projectPath": "/Users/raffacabofrio/REPOSITORIOS/SHAREBOOK/sharebook-backend/ShareBook/ShareBook.Repository/ShareBook.Infra.Data.csproj"
+              },
+              "/Users/raffacabofrio/REPOSITORIOS/SHAREBOOK/sharebook-backend/ShareBook/ShareBook.Service/ShareBook.Service.csproj": {
+                "projectPath": "/Users/raffacabofrio/REPOSITORIOS/SHAREBOOK/sharebook-backend/ShareBook/ShareBook.Service/ShareBook.Service.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Rollbar": {
+              "target": "Package",
+              "version": "[3.12.0, )"
+            },
+            "Rollbar.NetCore.AspNet": {
+              "target": "Package",
+              "version": "[3.12.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.301/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/raffacabofrio/REPOSITORIOS/SHAREBOOK/sharebook-backend/ShareBook/ShareBook.Repository/ShareBook.Infra.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/raffacabofrio/REPOSITORIOS/SHAREBOOK/sharebook-backend/ShareBook/ShareBook.Repository/ShareBook.Infra.Data.csproj",
+        "projectName": "ShareBook.Infra.Data",
+        "projectPath": "/Users/raffacabofrio/REPOSITORIOS/SHAREBOOK/sharebook-backend/ShareBook/ShareBook.Repository/ShareBook.Infra.Data.csproj",
+        "packagesPath": "/Users/raffacabofrio/.nuget/packages/",
+        "outputPath": "/Users/raffacabofrio/REPOSITORIOS/SHAREBOOK/sharebook-backend/ShareBook/ShareBook.Repository/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/raffacabofrio/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "/Users/raffacabofrio/REPOSITORIOS/SHAREBOOK/sharebook-backend/ShareBook/ShareBook.Domain/ShareBook.Domain.csproj": {
+                "projectPath": "/Users/raffacabofrio/REPOSITORIOS/SHAREBOOK/sharebook-backend/ShareBook/ShareBook.Domain/ShareBook.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "JsonDiffPatch.Net": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.3, )"
+            },
+            "Microsoft.IdentityModel.Tokens": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.301/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/raffacabofrio/REPOSITORIOS/SHAREBOOK/sharebook-backend/ShareBook/ShareBook.Service/ShareBook.Service.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/raffacabofrio/REPOSITORIOS/SHAREBOOK/sharebook-backend/ShareBook/ShareBook.Service/ShareBook.Service.csproj",
+        "projectName": "ShareBook.Service",
+        "projectPath": "/Users/raffacabofrio/REPOSITORIOS/SHAREBOOK/sharebook-backend/ShareBook/ShareBook.Service/ShareBook.Service.csproj",
+        "packagesPath": "/Users/raffacabofrio/.nuget/packages/",
+        "outputPath": "/Users/raffacabofrio/REPOSITORIOS/SHAREBOOK/sharebook-backend/ShareBook/ShareBook.Service/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/raffacabofrio/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "/Users/raffacabofrio/REPOSITORIOS/SHAREBOOK/sharebook-backend/ShareBook/ShareBook.Helper/ShareBook.Helper.csproj": {
+                "projectPath": "/Users/raffacabofrio/REPOSITORIOS/SHAREBOOK/sharebook-backend/ShareBook/ShareBook.Helper/ShareBook.Helper.csproj"
+              },
+              "/Users/raffacabofrio/REPOSITORIOS/SHAREBOOK/sharebook-backend/ShareBook/ShareBook.Repository/ShareBook.Infra.Data.csproj": {
+                "projectPath": "/Users/raffacabofrio/REPOSITORIOS/SHAREBOOK/sharebook-backend/ShareBook/ShareBook.Repository/ShareBook.Infra.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "AWSSDK.Extensions.NETCore.Setup": {
+              "target": "Package",
+              "version": "[3.3.101, )"
+            },
+            "AWSSDK.SQS": {
+              "target": "Package",
+              "version": "[3.3.102.108, )"
+            },
+            "Flurl.Http": {
+              "target": "Package",
+              "version": "[2.4.2, )"
+            },
+            "MailKit": {
+              "target": "Package",
+              "version": "[2.6.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.3, )"
+            },
+            "OneSignal.RestAPIv3.Client": {
+              "target": "Package",
+              "version": "[1.1.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.301/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/raffacabofrio/REPOSITORIOS/SHAREBOOK/sharebook-backend/ShareBook/ShareBook.Test.Unit/ShareBook.Test.Unit.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/raffacabofrio/REPOSITORIOS/SHAREBOOK/sharebook-backend/ShareBook/ShareBook.Test.Unit/ShareBook.Test.Unit.csproj",
+        "projectName": "ShareBook.Test.Unit",
+        "projectPath": "/Users/raffacabofrio/REPOSITORIOS/SHAREBOOK/sharebook-backend/ShareBook/ShareBook.Test.Unit/ShareBook.Test.Unit.csproj",
+        "packagesPath": "/Users/raffacabofrio/.nuget/packages/",
+        "outputPath": "/Users/raffacabofrio/REPOSITORIOS/SHAREBOOK/sharebook-backend/ShareBook/ShareBook.Test.Unit/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/raffacabofrio/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "/Users/raffacabofrio/REPOSITORIOS/SHAREBOOK/sharebook-backend/ShareBook/ShareBook.Api/ShareBook.Api.csproj": {
+                "projectPath": "/Users/raffacabofrio/REPOSITORIOS/SHAREBOOK/sharebook-backend/ShareBook/ShareBook.Api/ShareBook.Api.csproj"
+              },
+              "/Users/raffacabofrio/REPOSITORIOS/SHAREBOOK/sharebook-backend/ShareBook/ShareBook.Domain/ShareBook.Domain.csproj": {
+                "projectPath": "/Users/raffacabofrio/REPOSITORIOS/SHAREBOOK/sharebook-backend/ShareBook/ShareBook.Domain/ShareBook.Domain.csproj"
+              },
+              "/Users/raffacabofrio/REPOSITORIOS/SHAREBOOK/sharebook-backend/ShareBook/ShareBook.Infra.CrossCutting.Identity/ShareBook.Infra.CrossCutting.Identity.csproj": {
+                "projectPath": "/Users/raffacabofrio/REPOSITORIOS/SHAREBOOK/sharebook-backend/ShareBook/ShareBook.Infra.CrossCutting.Identity/ShareBook.Infra.CrossCutting.Identity.csproj"
+              },
+              "/Users/raffacabofrio/REPOSITORIOS/SHAREBOOK/sharebook-backend/ShareBook/ShareBook.Service/ShareBook.Service.csproj": {
+                "projectPath": "/Users/raffacabofrio/REPOSITORIOS/SHAREBOOK/sharebook-backend/ShareBook/ShareBook.Service/ShareBook.Service.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.5.0, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.13.1, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
+            "xunit.runner.visualstudio": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.301/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
