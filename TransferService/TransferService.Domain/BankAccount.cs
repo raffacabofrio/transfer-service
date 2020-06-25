@@ -1,7 +1,5 @@
 ﻿using System;
-using System.Text.RegularExpressions;
 using TransferService.Domain.Common;
-using TransferService.Domain.Enums;
 
 namespace TransferService.Domain
 {

@@ -1,7 +1,5 @@
 ﻿using System;
-using System.Text.RegularExpressions;
 using TransferService.Domain.Common;
-using TransferService.Domain.Enums;
 
 namespace TransferService.Domain
 {
@@ -9,7 +7,11 @@ namespace TransferService.Domain
     {
         public string Description { get; set; }
         public decimal Value { get; set; }
-        public User User { get; set; }
+
         public Guid UserId { get; set; }
+        public User User { get; set; }
+
+        public Guid? TransferId { get; set; }
+        public Transfer Transfer { get; set; }
     }
 }

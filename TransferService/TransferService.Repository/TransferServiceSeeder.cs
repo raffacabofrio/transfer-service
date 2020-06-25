@@ -28,6 +28,7 @@ namespace TransferService.Repository
             {
                 var user1 = new User()
                 {
+                    Id = new Guid("4BAB674D-AC4C-4AD7-A5E0-A3E802826AFB"),
                     Name = "Usuário 01",
                     Email = "user01@transferservice.com",
                     Linkedin = "linkedin.com/walter.cardoso",
@@ -54,6 +55,7 @@ namespace TransferService.Repository
 
                 var user2 = new User()
                 {
+                    Id = new Guid("5CD6FF15-1BD5-46DD-ACAB-E3113C308323"),
                     Name = "Usuário 02",
                     Email = "user02@transferservice.com",
                     Linkedin = "linkedin.com/vagner",
@@ -157,10 +159,37 @@ namespace TransferService.Repository
                     CreationDate = new DateTime(2020, 01, 03)
                 };
 
-                _context.Entries.AddRange(entry1, entry2, entry3);
+                // Transferência do usuário 1 pro usuário 2
+                var transfer = new Transfer()
+                {
+                    UserOrigin = user1,
+                    UserDestination = user2,
+                    Value = 100,
+                    CreationDate = new DateTime(2020, 01, 04)
+                };
+
+                var entry4 = new Entry()
+                {
+                    Description = "[envio] Transferência para usuário 2",
+                    User = user1,
+                    Value = -100,
+                    CreationDate = new DateTime(2020, 01, 04),
+                    Transfer = transfer
+                };
+
+                var entry5 = new Entry()
+                {
+                    Description = "[recebimento] Transferência do usuário 1",
+                    User = user2,
+                    Value = 100,
+                    CreationDate = new DateTime(2020, 01, 04),
+                    Transfer = transfer
+                };
+
+                _context.Entries.AddRange(entry1, entry2, entry3, entry4, entry5);
                 _context.Users.AddRange(user1, user2, user3, user4);
                 _context.SaveChanges();
-            }
+            } 
 
         }
 
