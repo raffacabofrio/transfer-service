@@ -9,5 +9,6 @@ namespace TransferService.Service
     public interface ITransferService : IBaseService<Transfer>
     {
         decimal getBalance(Guid userId);
+        IList<Entry> getStatement(Guid userId);
     }
 }

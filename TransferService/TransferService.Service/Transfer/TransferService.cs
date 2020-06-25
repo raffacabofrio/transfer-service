@@ -44,8 +44,19 @@ namespace TransferService.Service
             return user.BankAccount.Balance;
         }
 
+        public IList<Entry> getStatement(Guid userId)
+        {
+            var user = _userRepository.Get()
+                .Include(u => u.Entries)
+                .Where(u => u.Id == userId)
+                .FirstOrDefault();
+
+            if (user == null)
+                throw new TransferServiceException(TransferServiceException.Error.NotFound);
+
+            return user.Entries.OrderBy(e => e.CreationDate).ToList();
+        }
 
 
-       
     }
 }
