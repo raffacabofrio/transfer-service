@@ -150,19 +150,6 @@ namespace TransferService.Service
             return result;
         }
 
-        public decimal getBalance(Guid userId)
-        {
-            var user = _userRepository.Get()
-                .Include(u => u.BankAccount)
-                .Where(u => u.Id == userId)
-                .FirstOrDefault();
-
-            if (user == null)
-                throw new TransferServiceException(TransferServiceException.Error.NotFound);
-
-            return user.BankAccount.Balance;
-        }
-
 
         #endregion Public
 

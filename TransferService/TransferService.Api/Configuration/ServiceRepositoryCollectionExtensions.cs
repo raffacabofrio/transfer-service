@@ -17,13 +17,15 @@ namespace TransferService.Api.Configuration
         {
             //services
             services.AddScoped<IUserService, UserService>();
-
+            services.AddScoped<ITransferService, Service.TransferService>();
 
             //repositories
             services.AddScoped<IUserRepository, UserRepository>();
+            services.AddScoped<ITransferRepository, TransferRepository>();
 
             //validators
             services.AddScoped<IValidator<User>, UserValidator>();
+            services.AddScoped<IValidator<Transfer>, TransferValidator>();
 
             //Auth
             services.AddScoped<IApplicationSignInManager, ApplicationSignInManager>();

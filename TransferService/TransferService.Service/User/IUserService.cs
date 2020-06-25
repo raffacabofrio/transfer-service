@@ -12,6 +12,5 @@ namespace TransferService.Service
         new Result<User> Update(User user);
         Result<User> ValidOldPasswordAndChangeUserPassword(User user, string newPassword);
         Result<User> ChangeUserPassword(User user, string newPassword);
-        decimal getBalance(Guid userId);
     }
 }

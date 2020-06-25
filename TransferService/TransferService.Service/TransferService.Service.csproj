@@ -18,4 +18,7 @@
     <ProjectReference Include="..\TransferService.Helper\TransferService.Helper.csproj" />
     <ProjectReference Include="..\TransferService.Repository\TransferService.Infra.Data.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Transfer\" />
+  </ItemGroup>
 </Project>

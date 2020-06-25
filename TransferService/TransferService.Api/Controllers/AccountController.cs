@@ -145,20 +145,6 @@ namespace TransferService.Api.Controllers
             return _userService.ValidOldPasswordAndChangeUserPassword(user, changePasswordUserVM.NewPassword);
         }
 
-        [Authorize("Bearer")]
-        [HttpGet("Balance")]
-        public Result Balance()
-        {
-            var userId = new Guid(Thread.CurrentPrincipal?.Identity?.Name);
-            var balance = _userService.getBalance(userId);
-            return new Result()
-            {
-                Value = balance
-            };
-        }
-
-
-
         #endregion PUT
 
 

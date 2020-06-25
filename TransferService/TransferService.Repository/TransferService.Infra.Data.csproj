@@ -24,6 +24,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Migrations\" />
+    <Folder Include="Repository\Transfer\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TransferService.Domain\TransferService.Domain.csproj" />
