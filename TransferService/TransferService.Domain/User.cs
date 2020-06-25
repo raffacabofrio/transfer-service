@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Text.RegularExpressions;
 using TransferService.Domain.Common;
 using TransferService.Domain.Enums;
@@ -21,6 +22,7 @@ namespace TransferService.Domain
         public bool AllowSendingEmail { get; set; } = true;
         public virtual Address Address { get; set; }
         public virtual BankAccount BankAccount { get; set; }
+        public virtual ICollection<Entry> Entries { get; set; }
 
         public bool PasswordIsStrong()
         {

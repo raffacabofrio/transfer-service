@@ -15,6 +15,7 @@ namespace TransferService.Repository
         public DbSet<LogEntry> LogEntries { get; set; }
         public DbSet<Address> Addresses { get; set; }
         public DbSet<BankAccount> BankAccounts { get; set; }
+        public DbSet<Entry> Entries { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

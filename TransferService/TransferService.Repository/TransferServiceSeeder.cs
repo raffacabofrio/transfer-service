@@ -132,6 +132,32 @@ namespace TransferService.Repository
                     }
                 };
 
+                // Lançamentos do Usuário 1
+                var entry1 = new Entry()
+                {
+                    Description = "Depósito inicial",
+                    User = user1,
+                    Value = 9000,
+                    CreationDate =  new DateTime(2020, 01, 01)
+                };
+
+                var entry2 = new Entry()
+                {
+                    Description = "Saque",
+                    User = user1,
+                    Value = -100,
+                    CreationDate = new DateTime(2020, 01, 02)
+                };
+
+                var entry3 = new Entry()
+                {
+                    Description = "Depósito balanceador",
+                    User = user1,
+                    Value = 1100,
+                    CreationDate = new DateTime(2020, 01, 03)
+                };
+
+                _context.Entries.AddRange(entry1, entry2, entry3);
                 _context.Users.AddRange(user1, user2, user3, user4);
                 _context.SaveChanges();
             }
