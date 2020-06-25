@@ -7,21 +7,25 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.5.0" />
-    <PackageReference Include="Moq" Version="4.13.1" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.6.1" />
+    <PackageReference Include="Moq" Version="4.14.4" />
     <PackageReference Include="xunit" Version="2.4.1" />
-    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.1" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.2"><IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+<PrivateAssets>all</PrivateAssets>
+</PackageReference>
     <DotNetCliToolReference Include="dotnet-xunit" Version="2.3.1" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ShareBook.Api\ShareBook.Api.csproj" />
-    <ProjectReference Include="..\ShareBook.Domain\ShareBook.Domain.csproj" />
-    <ProjectReference Include="..\ShareBook.Infra.CrossCutting.Identity\ShareBook.Infra.CrossCutting.Identity.csproj" />
-    <ProjectReference Include="..\ShareBook.Service\ShareBook.Service.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Compile Remove="Jobs\1 - ChooseDateReminderTest.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove=".DS_Store" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TransferService.Api\TransferService.Api.csproj" />
+    <ProjectReference Include="..\TransferService.Domain\TransferService.Domain.csproj" />
+    <ProjectReference Include="..\TransferService.Infra.CrossCutting.Identity\TransferService.Infra.CrossCutting.Identity.csproj" />
+    <ProjectReference Include="..\TransferService.Service\TransferService.Service.csproj" />
   </ItemGroup>
 </Project>
