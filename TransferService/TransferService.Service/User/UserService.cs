@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
 using FluentValidation;
+using Microsoft.EntityFrameworkCore;
 using TransferService.Domain;
 using TransferService.Domain.Common;
 using TransferService.Domain.Exceptions;
@@ -147,6 +148,19 @@ namespace TransferService.Service
             result.Value = UserCleanup(user);
 
             return result;
+        }
+
+        public decimal getBalance(Guid userId)
+        {
+            var user = _userRepository.Get()
+                .Include(u => u.BankAccount)
+                .Where(u => u.Id == userId)
+                .FirstOrDefault();
+
+            if (user == null)
+                throw new TransferServiceException(TransferServiceException.Error.NotFound);
+
+            return user.BankAccount.Balance;
         }
 
 
