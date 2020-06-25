@@ -1,9 +1,0 @@
-/Users/raffacabofrio/REPOSITORIOS/SHAREBOOK/sharebook-backend/ShareBook/ShareBook.Helper/bin/Debug/netcoreapp3.1/ShareBook.Helper.deps.json
-/Users/raffacabofrio/REPOSITORIOS/SHAREBOOK/sharebook-backend/ShareBook/ShareBook.Helper/bin/Debug/netcoreapp3.1/ShareBook.Helper.dll
-/Users/raffacabofrio/REPOSITORIOS/SHAREBOOK/sharebook-backend/ShareBook/ShareBook.Helper/bin/Debug/netcoreapp3.1/ShareBook.Helper.pdb
-/Users/raffacabofrio/REPOSITORIOS/SHAREBOOK/sharebook-backend/ShareBook/ShareBook.Helper/obj/Debug/netcoreapp3.1/ShareBook.Helper.csproj.CoreCompileInputs.cache
-/Users/raffacabofrio/REPOSITORIOS/SHAREBOOK/sharebook-backend/ShareBook/ShareBook.Helper/obj/Debug/netcoreapp3.1/ShareBook.Helper.AssemblyInfoInputs.cache
-/Users/raffacabofrio/REPOSITORIOS/SHAREBOOK/sharebook-backend/ShareBook/ShareBook.Helper/obj/Debug/netcoreapp3.1/ShareBook.Helper.AssemblyInfo.cs
-/Users/raffacabofrio/REPOSITORIOS/SHAREBOOK/sharebook-backend/ShareBook/ShareBook.Helper/obj/Debug/netcoreapp3.1/ShareBook.Helper.dll
-/Users/raffacabofrio/REPOSITORIOS/SHAREBOOK/sharebook-backend/ShareBook/ShareBook.Helper/obj/Debug/netcoreapp3.1/ShareBook.Helper.pdb
-/Users/raffacabofrio/REPOSITORIOS/SHAREBOOK/sharebook-backend/ShareBook/ShareBook.Helper/obj/Debug/netcoreapp3.1/ShareBook.Helper.csprojAssemblyReference.cache

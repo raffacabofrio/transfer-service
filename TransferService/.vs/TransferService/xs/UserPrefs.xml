@@ -1,5 +1,5 @@
 ﻿<Properties StartupConfiguration="{384DB7AC-4918-4ABD-9C12-5F673FFB200D}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="TransferService.Repository/TransferServiceSeeder.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="TransferService.Api/Startup.cs">
     <Files>
       <File FileName="TransferService.Infra.CrossCutting.Identity/ApplicationSignInManager.cs" Line="2" Column="23" />
       <File FileName="TransferService.Api/appsettings.json" Line="5" Column="27" />
@@ -7,15 +7,22 @@
       <File FileName="TransferService.Api/TransferService.Api.csproj" Line="1" Column="1" />
       <File FileName="TransferService.Api/Properties/launchSettings.json" Line="22" Column="30" />
       <File FileName="TransferService.Repository/TransferServiceSeeder.cs" Line="32" Column="30" />
+      <File FileName="TransferService.Api/Startup.cs" Line="127" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="TransferService" expanded="True">
-            <Node name="4 - Infrastructure" expanded="True">
-              <Node name="TransferService.Infra.Data" expanded="True">
-                <Node name="TransferServiceSeeder.cs" selected="True" />
+            <Node name="1 - Api" expanded="True">
+              <Node name="TransferService.Api" expanded="True">
+                <Node name="Startup.cs" selected="True" />
               </Node>
+            </Node>
+            <Node name="3 - Helper" expanded="True">
+              <Node name="TransferService.Helper" expanded="True" />
+            </Node>
+            <Node name="4 - Infrastructure" expanded="True">
+              <Node name="TransferService.Infra.Data" expanded="True" />
             </Node>
           </Node>
         </State>
