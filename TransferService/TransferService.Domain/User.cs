@@ -20,6 +20,7 @@ namespace TransferService.Domain
         public bool Active { get; set; } = true;
         public bool AllowSendingEmail { get; set; } = true;
         public virtual Address Address { get; set; }
+        public virtual BankAccount BankAccount { get; set; }
 
         public bool PasswordIsStrong()
         {

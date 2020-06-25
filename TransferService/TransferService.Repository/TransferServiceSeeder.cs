@@ -44,6 +44,11 @@ namespace TransferService.Repository
                         City = "São Paulo",
                         State = "SP",
                         Country = "Brasil"
+                    },
+                    BankAccount = new BankAccount()
+                    {
+                        AccountNumber = 11111,
+                        Balance = 10000,
                     }
                 };
 
@@ -66,6 +71,11 @@ namespace TransferService.Repository
                         City = "São Paulo",
                         State = "SP",
                         Country = "Brasil"
+                    },
+                    BankAccount = new BankAccount()
+                    {
+                        AccountNumber = 22222,
+                        Balance = 100,
                     }
                 };
 
@@ -87,6 +97,11 @@ namespace TransferService.Repository
                         City = "São Paulo",
                         State = "SP",
                         Country = "Brasil"
+                    },
+                    BankAccount = new BankAccount()
+                    {
+                        AccountNumber = 33333,
+                        Balance = 0,
                     }
                 };
 
@@ -109,6 +124,11 @@ namespace TransferService.Repository
                         City = "São Paulo",
                         State = "SP",
                         Country = "Brasil"
+                    },
+                    BankAccount = new BankAccount()
+                    {
+                        AccountNumber = 44444,
+                        Balance = 100000,
                     }
                 };
 
