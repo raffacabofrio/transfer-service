@@ -37,30 +37,30 @@ namespace TransferService.Test.Unit.Services
 
             userRepositoryMock.Setup(repo => repo.Insert(It.IsAny<User>())).Returns(() =>
             {
-                return UserMock.GetGrantee();
+                return UserMock.GetUser2();
             });
 
             userRepositoryMock.Setup(repo => repo.Update(It.IsAny<User>())).Returns(() =>
             {
-                return UserMock.GetGrantee();
+                return UserMock.GetUser2();
             });
 
             userRepositoryMock.Setup(repo => repo.Find(It.IsAny<Expression<Func<User, bool>>>())).Returns(() =>
             {
-                return UserMock.GetGrantee();
+                return UserMock.GetUser2();
             });
 
             userRepositoryMock.Setup(repo => repo.Find(It.IsAny<IncludeList<User>>(), It.IsAny<Guid>())).Returns(() =>
             {
-                return UserMock.GetGrantee();
+                return UserMock.GetUser2();
             });
 
             userRepositoryMock.Setup(repo => repo.Get()).Returns(() =>
             {
                 return new List<User>()
                 {
-                    UserMock.GetGrantee(),
-                    UserMock.GetDonor()
+                    UserMock.GetUser2(),
+                    UserMock.GetUser1()
                 }.AsQueryable();
             });
 

@@ -27,7 +27,7 @@ namespace TransferService.Test.Unit.Mocks
             return principal;
         }
 
-        public static User GetDonor()
+        public static User GetUser1()
         {
             return  new User()
             {
@@ -38,16 +38,21 @@ namespace TransferService.Test.Unit.Mocks
                 Email = "rodrigo@sharebook.com",
                 Linkedin = "linkedin.com/rodrigo",
                 Profile = Profile.User,
-                LastLogin = DateTime.Now.AddMinutes(-60)
+                LastLogin = DateTime.Now.AddMinutes(-60),
+                BankAccount = new BankAccount
+                {
+                    AccountNumber = 11111,
+                    Balance = 5000
+                }
             };
         }
 
-        public static User GetGrantee()
+        public static User GetUser2()
         {
             return new User()
             {
 
-                Id = new Guid("5489A967-9320-4350-FFFF-08D5CC8498F3"),
+                Id = new Guid("8d94051f-ac29-4b04-b8af-acfe2009af6d"),
                 Name = "Walter Vinicius",
                 Password = PASSWORD_HASH,
                 PasswordSalt = PASSWORD_SALT,
@@ -69,11 +74,11 @@ namespace TransferService.Test.Unit.Mocks
             };
         }
 
-        public static  User GetAdmin()
+        public static  User GetUser3()
         {
             return new User()
             {
-                Id = new Guid("5489A967-AAAA-BBBB-CCCC-08D5CC8498F3"),
+                Id = new Guid("f9f7263c-2a6e-43f5-a239-b0d1eb426f1f"),
                 Name = "Cussa Mitre",
                 Password = PASSWORD_HASH,
                 PasswordSalt = PASSWORD_SALT,

@@ -1,15 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading;
 using FluentValidation;
-using Microsoft.EntityFrameworkCore;
 using TransferService.Domain;
-using TransferService.Domain.Common;
 using TransferService.Domain.Exceptions;
-using TransferService.Helper.Crypto;
 using TransferService.Repository;
-using TransferService.Repository.Repository;
 using TransferService.Repository.UoW;
 using TransferService.Service.Generic;
 
