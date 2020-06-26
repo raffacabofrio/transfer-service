@@ -35,7 +35,7 @@ namespace TransferService.Api.Filters
                     Message = "You may only perform this action every {n} seconds.";
 
                 c.Result = new ContentResult { Content = Message.Replace("{n}", Seconds.ToString()) };
-                c.HttpContext.Response.StatusCode = (int)HttpStatusCode.Conflict;
+                c.HttpContext.Response.StatusCode = (int)HttpStatusCode.TooManyRequests;
             }
         }
     }

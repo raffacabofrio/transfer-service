@@ -22,6 +22,8 @@ namespace TransferService.Api.Configuration
             //repositories
             services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<ITransferRepository, TransferRepository>();
+            services.AddScoped<IEntryRepository, EntryRepository>();
+            services.AddScoped<IBankAccountRepository, BankAccountRepository>();
 
             //validators
             services.AddScoped<IValidator<User>, UserValidator>();

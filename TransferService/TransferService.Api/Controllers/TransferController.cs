@@ -5,6 +5,7 @@ using AutoMapper;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.ModelBinding;
 using Microsoft.Extensions.Configuration;
 using TransferService.Api.Filters;
 using TransferService.Api.ViewModels;
@@ -50,6 +51,24 @@ namespace TransferService.Api.Controllers
             var statementVM = _mapper.Map<List<EntryVM>>(statement);
 
             return new Result<IList<EntryVM>>(statementVM);
+        }
+
+        [Authorize("Bearer")]
+        [HttpPost("Transfer")]
+        [Throttle(Name = "Transfer", Seconds = 10, VaryByIp = false)]
+        public IActionResult Transfer([FromBody] TransferVM transferVM)
+        {
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
+            var userId = new Guid(Thread.CurrentPrincipal?.Identity?.Name);
+            var result = _transferService.Transfer(userId, transferVM.AccountNumberOrigin, transferVM.AccountNumberDestination, transferVM.Value);
+
+            return Ok(new Result()
+            {
+                Value = result,
+                SuccessMessage = "Transferência efetuada com sucesso."
+            });
         }
 
     }

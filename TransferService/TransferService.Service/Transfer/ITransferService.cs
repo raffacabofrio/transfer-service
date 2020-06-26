@@ -10,5 +10,6 @@ namespace TransferService.Service
     {
         decimal getBalance(Guid userId);
         IList<Entry> getStatement(Guid userId);
+        Guid Transfer(Guid userId, int accountNumberOrigin, int accountNumberDestination, decimal value);
     }
 }

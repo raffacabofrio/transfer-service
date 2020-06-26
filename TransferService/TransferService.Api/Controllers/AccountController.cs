@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Threading;
 using AutoMapper;
 using Microsoft.AspNetCore.Authorization;
@@ -10,7 +9,6 @@ using TransferService.Api.Filters;
 using TransferService.Api.ViewModels;
 using TransferService.Domain;
 using TransferService.Domain.Common;
-using TransferService.Domain.Exceptions;
 using TransferService.Infra.CrossCutting.Identity;
 using TransferService.Infra.CrossCutting.Identity.Interfaces;
 using TransferService.Service;
