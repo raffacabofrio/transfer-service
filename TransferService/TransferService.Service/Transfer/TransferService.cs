@@ -64,7 +64,7 @@ namespace TransferService.Service
             var userOrigin = _userRepository.GetUser(accountNumberOrigin);
             var userDestination = _userRepository.GetUser(accountNumberDestination);
 
-            if(userOrigin == null)
+            if (userOrigin == null)
                 throw new TransferServiceException(TransferServiceException.Error.NotFound, "Conta de origem não encontrada.");
 
             if (userDestination == null)
@@ -79,16 +79,29 @@ namespace TransferService.Service
             if (value > userOrigin.BankAccount.Balance)
                 throw new TransferServiceException(TransferServiceException.Error.BadRequest, "Você não tem saldo suficiente para essa operação.");
 
-            var transfer = CreateMainTransfer(userOrigin, userDestination, value);
+            try
+            {
+                _unitOfWork.BeginTransaction();
 
-            CreateEntry(userOrigin, "[envio] Transferência para " + userDestination.Name, value * -1, transfer);
-            CreateEntry(userDestination, "[recebimento] Transferência de " + userOrigin.Name, value, transfer);
+                var transfer = CreateMainTransfer(userOrigin, userDestination, value);
 
-            _bankAccountRepository.updateBalance(userOrigin.Id, value * -1);
-            _bankAccountRepository.updateBalance(userDestination.Id, value);
+                CreateEntry(userOrigin, "[envio] Transferência para " + userDestination.Name, value * -1, transfer);
+                CreateEntry(userDestination, "[recebimento] Transferência de " + userOrigin.Name, value, transfer);
 
-            return transfer.Id;
+                _bankAccountRepository.updateBalance(userOrigin.Id, value * -1);
+                _bankAccountRepository.updateBalance(userDestination.Id, value);
+
+                _unitOfWork.Commit();
+
+                return transfer.Id;
+            }
+            catch (Exception ex)
+            {
+                _unitOfWork.Rollback();
+                throw ex;
+            }
         }
+            
 
         private Transfer CreateMainTransfer(User userOrigin, User userDestination, decimal value) {            
             var transfer = new Transfer()
