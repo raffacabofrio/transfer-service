@@ -61,8 +61,8 @@ namespace TransferService.Service
 
         public Guid Transfer(Guid userId, int accountNumberOrigin, int accountNumberDestination, decimal value)
         {
-            var userOrigin = GetUser(accountNumberOrigin);
-            var userDestination = GetUser(accountNumberDestination);
+            var userOrigin = _userRepository.GetUser(accountNumberOrigin);
+            var userDestination = _userRepository.GetUser(accountNumberDestination);
 
             if(userOrigin == null)
                 throw new TransferServiceException(TransferServiceException.Error.NotFound, "Conta de origem não encontrada.");
@@ -79,55 +79,39 @@ namespace TransferService.Service
             if (value > userOrigin.BankAccount.Balance)
                 throw new TransferServiceException(TransferServiceException.Error.BadRequest, "Você não tem saldo suficiente para essa operação.");
 
-            // 1 - create main transfer
-            var transferId = Guid.NewGuid();
+            var transfer = CreateMainTransfer(userOrigin, userDestination, value);
+
+            CreateEntry(userOrigin, "[envio] Transferência para " + userDestination.Name, value * -1, transfer);
+            CreateEntry(userDestination, "[recebimento] Transferência de " + userOrigin.Name, value, transfer);
+
+            _bankAccountRepository.updateBalance(userOrigin.Id, value * -1);
+            _bankAccountRepository.updateBalance(userDestination.Id, value);
+
+            return transfer.Id;
+        }
+
+        private Transfer CreateMainTransfer(User userOrigin, User userDestination, decimal value) {            
             var transfer = new Transfer()
             {
                 UserOrigin = userOrigin,
                 UserDestination = userDestination,
                 Value = value,
-                Id = transferId
             };
-            _transferRepository.Insert(transfer);
 
-            // 2 - create entry origin
+            return _transferRepository.Insert(transfer);
+        }
+
+        private void CreateEntry(User user, string description, decimal value, Transfer transfer)
+        {
             var entryOrigin = new Entry()
             {
-                User = userOrigin,
-                Description = "[envio] Transferência para " + userDestination.Name,
-                Value = value * -1,
-                Transfer = transfer
-            };
-            _entryRepository.Insert(entryOrigin);
-
-            // 3 - create entry destination
-            var entryDestination = new Entry()
-            {
-                User = userDestination,
-                Description = "[recebimento] Transferência de " + userOrigin.Name,
+                User = user,
+                Description = description,
                 Value = value,
                 Transfer = transfer
             };
-            _entryRepository.Insert(entryDestination);
-
-            // 4 - update balance
-            _bankAccountRepository.updateBalance(userOrigin.Id, value * -1);
-            _bankAccountRepository.updateBalance(userDestination.Id, value);
-
-            return transferId;
+            _entryRepository.Insert(entryOrigin);
         }
-
-        // Todo: mover para a camada repository, pra facilitar os testes.
-        private User GetUser(int accountNumber)
-        {
-            var user = _userRepository.Get()
-                .Include(u => u.BankAccount)
-                .Where(u => u.BankAccount.AccountNumber == accountNumber)
-                .FirstOrDefault();
-
-            return user;
-        }
-
-        
+ 
     }
 }

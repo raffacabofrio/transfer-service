@@ -5,6 +5,7 @@ namespace TransferService.Repository
 {
     public interface IUserRepository : IRepositoryGeneric<User>
     {
-        Task<User> UpdatePassword(User user);
+        public Task<User> UpdatePassword(User user);
+        public User GetUser(int accountNumber);
     }
 }
